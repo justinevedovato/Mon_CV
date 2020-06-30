@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
-:root {
-  --main-color: #00acc1;
-  --secondary-color: #006064;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -21,9 +16,9 @@ body {
 .container {
   background-color: #fff;
   max-width: 1190px;
-  height: 1684px;
   margin: 0;
   /* outline: 2px solid red; */
+  display: flex;
 }
 
 h1,
@@ -48,7 +43,7 @@ header h1 {
 
 header span {
   font-weight: bold;
-  color: var(--main-color);
+  color: #00acc1;
 }
 
 header p {
@@ -63,9 +58,8 @@ header p {
 
 .sidebar {
   width: 384px;
-  position: absolute;
-  height: 1684px;
-  background-color: var(--main-color);
+  /* position: absolute; */
+  background-color: #00acc1;
   color: #fff;
   padding: 0px;
   text-align: justify;
@@ -75,7 +69,7 @@ header p {
 }
 
 .sidebar h2 {
-  background-color: var(--secondary-color);
+  background-color: #006064;
   padding: 10px;
   color: #fff;
   text-align: center;
@@ -122,7 +116,7 @@ padding: 10px; */
 ****************************************************************/
 
 .main {
-  position: relative;
+  /* position: relative; */
   width: 65%;
   height: auto;
   /* top: 0; */
@@ -143,13 +137,13 @@ padding: 10px; */
   /* background-color: yellowgreen; */
   font-size: 1.7em;
   margin: 25px 30px 25px 0;
-  border-bottom: 3px solid var(--main-color);
+  border-bottom: 3px solid #00acc1;
   /* align-items: flex-start; */
 }
 
 /* boutons de liste */
 .list {
-  color: var(--main-color);
+  color: #00acc1;
   font-size: 0.7em;
   margin-right: 10px;
 }
@@ -162,7 +156,7 @@ padding: 10px; */
 
 /* icônes principales */
 .icon {
-  color: var(--main-color);
+  color: #00acc1;
   font-size: 1.8em;
   margin-right: 30px;
   margin-bottom: 15px;
@@ -182,7 +176,7 @@ padding: 10px; */
 
 .recommend {
   display: flex;
-  flex-direction: line;
+  margin-bottom: 30px;
 }
 
 .contact {
