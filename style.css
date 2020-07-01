@@ -17,7 +17,6 @@ body {
   background-color: #fff;
   max-width: 1190px;
   margin: 0;
-  /* outline: 2px solid red; */
   display: flex;
 }
 
@@ -41,7 +40,7 @@ header h1 {
   margin-bottom: 0;
 }
 
-header span {
+header h1 span {
   font-weight: bold;
   color: #00acc1;
 }
@@ -51,19 +50,21 @@ header p {
   font-weight: bold;
   margin-top: 5px;
   color: #263238;
+  /* effet de soulignage partiel */
+  padding-bottom: 5px;
+  background: linear-gradient(to right, #00acc1, #00acc1) no-repeat;
+  background-size: 11% 3px;
+  background-position: left bottom;
 }
 
 /* SIDEBAR 
 ****************************************************************/
 
 .sidebar {
-  width: 384px;
-  /* position: absolute; */
+  width: 400px;
   background-color: #00acc1;
   color: #fff;
-  padding: 0px;
   text-align: justify;
-  /* border: 2px solid lightcoral; */
   display: flex;
   flex-direction: column;
 }
@@ -76,9 +77,14 @@ header p {
   margin-top: 60px;
 }
 
-.sidebar p {
-  margin: 0 30px 0 30px;
-  line-height: 1.5em;
+.sidebar p,
+.sidebar dt,
+.sidebar dd {
+  margin: 0 35px 0 35px;
+}
+
+.sidebar dd {
+  margin-bottom: 20px;
 }
 
 img {
@@ -93,59 +99,63 @@ img {
   margin-top: 45px;
 }
 
-.sidebar .about {
-  flex-grow: 1;
-}
-
 .sidebar .loisirs {
   text-align: center;
   margin-top: auto;
-  height: 200px;
+  height: 240px;
 }
 
 .sidebar .content {
   font-size: 2em;
 }
 
-/* Pour les icônes Loisirs */
-/* border-radius: 50%;
-border: 2px solid grey;
-padding: 10px; */
+.loisirs i {
+  font-size: 1.3em;
+  margin: 12px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 10px;
+}
 
 /* MAIN PAGE 
 ****************************************************************/
 
-.main {
-  /* position: relative; */
-  width: 65%;
-  height: auto;
-  /* top: 0; */
-  left: 394px;
-  /* right: 0; */
-  /* bottom: 0; */
+main {
   padding-left: 64px;
-  /* background-color: lightsalmon; */
+}
+
+.block h2 {
+  font-size: 1.7em;
+  margin: 25px 30px 25px 0;
+  border-bottom: 3px solid #00acc1;
+}
+
+.block h3,
+.block p {
+  margin: 12px 0 12px 0;
+}
+
+.block h5 {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
 }
 
 .block .line {
   display: flex;
-  margin: 15px 15px 15px 0;
-  /* background-color:yellow; */
-}
-
-.block h2 {
-  /* background-color: yellowgreen; */
-  font-size: 1.7em;
-  margin: 25px 30px 25px 0;
-  border-bottom: 3px solid #00acc1;
-  /* align-items: flex-start; */
+  margin: 30px 30px 30px 0;
+  position: relative;
 }
 
 /* boutons de liste */
 .list {
   color: #00acc1;
   font-size: 0.7em;
+  position: absolute;
   margin-right: 10px;
+  padding-top: 5px;
+  left: 0;
 }
 
 /*boutons haut de liste*/
@@ -162,12 +172,15 @@ padding: 10px; */
   margin-bottom: 15px;
 }
 
-.block .line > div {
+/* .block .line > div {
   margin: 15px 15px 15px 0;
-}
+} */
 
 .date {
   width: 350px;
+  padding-top: 12px;
+  padding-left: 25px;
+  font-weight: bold;
 }
 
 .block .content {
@@ -176,10 +189,11 @@ padding: 10px; */
 
 .recommend {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .contact {
-  width: 50%;
+  flex: 1;
   align-content: center;
+  line-height: 0.8em;
 }

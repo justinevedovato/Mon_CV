@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/684a8ea0fd.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/684a8ea0fd.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>Mon CV</title>
   </head>
@@ -12,58 +15,54 @@
     <div class="container">
       <!-- SIDEBAR -->
       <div class="sidebar">
-        <div class="top">
-          <img src="img/image.jpg" alt="Photo de profil">
-          <!-- image -->
+        <!-- "top" : regroupe les blocs du haut de la barre latérale -->
+        <section class="top">
+          <img src="img/image.jpg" alt="Photo de profil" />
 
           <h2>Contact</h2>
-          <section class="infos">
-            <p>
-              Adresse <br />
-              Andernos-les-Bains, France
-            </p>
-            <br />
-            <p>
-              Téléphone <br />
-              06 00 00 00 00
-            </p>
-            <br />
-            <p>
-              Email <br />
-              justinevedovato@gmail.com
-            </p>
-            <br />
-            <p>
-              Site web <br />
-              github.com/justinevedovato</p>
-            </p>
-          </section>
+
+          <div class="infos">
+            <dl>
+              <dt>Adresse</dt>
+              <dd>Andernos-les-Bains, France</dd>
+
+              <dt>Téléphone</dt>
+              <dd>06 00 00 00 00</dd>
+
+              <dt>Email</dt>
+              <dd>justinevedovato@gmail.com</dd>
+
+              <dt>Site web</dt>
+              <dd>github.com/justinevedovato</dd>
+            </dl>
+          </div>
 
           <h2>À propos de moi</h2>
 
-          <section class="about">
+          <div class="about">
             <!-- A remplir  -->
 
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic amet
-              vel dolor ea velit officia ipsum consequuntur. Fuga exercitationem
-              dolorem culpa nisi, expedita quo itaque. Sed magni ut voluptas
-              ullam, libero nisi et repellat exercitationem provident id sit
-              veritatis nulla.
+              Ancienne couturière en reconversion, j'ai décidé de me réorienter
+              et ai commencé une formation de Développeur Web, au terme de
+              laquelle je serai à la recherche d'un emploi.
             </p>
-          </section>
-        </div>
-          <section class="loisirs">
-            <h2>Loisirs</h2>
+          </div>
+        </section>
+
+        <section class="loisirs">
+          <h2>Loisirs</h2>
 
           <div class="content">
             <!-- icônes -->
-            <p>x x x</p>
+            <i class="fas fa-camera"></i>
+            <i class="fas fa-guitar"></i>
+            <i class="fas fa-palette"></i>
           </div>
         </section>
       </div>
 
-      <div class="main">
+      <main>
         <header>
           <h1><span>Justine</span> Védovato</h1>
           <p>Développeuse web freelance</p>
@@ -71,34 +70,51 @@
 
         <!-- Bloc FORMATION -->
         <section class="block">
-          <h2><i class="fas fa-graduation-cap icon"></i><span>Formation</span></h2>
+          <h2><i class="fas fa-graduation-cap icon"></i>Formation</h2>
 
           <div class="line">
             <div class="date">
-              <p><i class="far fa-dot-circle list"> </i>Date et lieu</p>
+              <i class="far fa-dot-circle list"> </i>Juin 2020 ~ <br />
+              En ligne
             </div>
             <div class="content">
-              <h3>Intitulé</h3>
+              <h3>OpenClassrooms</h3>
+              <h5>Développeur Web Junior</h5>
               <p>
-                Blablabla <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus sit ea ratione voluptatem fugit tempore dicta adipisci
-                ad quibusdam? Officiis.
+                Apprentissage du HTML5 et CSS3: assemblage d'élements d'une
+                maquette graphique, intégration de contenus texte, image, audio
+                et video. Apprentissage des normes d'accessibilité et de
+                référencement.
               </p>
             </div>
           </div>
 
           <div class="line">
             <div class="date">
-              <p><i class="fas fa-circle list"></i> Date et lieu</p>
+              <i class="fas fa-circle list"></i>Février 2020 ~ <br />
+              En ligne
             </div>
             <div class="content">
-              <h3>Intitulé</h3>
+              <h3>Udemy</h3>
+              <h5>20 Web Projects With Vanilla JavaScript</h5>
               <p>
-                Blablabla <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sapiente alias laudantium sed accusamus veniam, iure eius modi
-                ipsum.
+                Apprentissage des bases du JavaScript via une série de
+                tutoriels, en initiation au développement web.
+              </p>
+            </div>
+          </div>
+          <div class="line">
+            <div class="date">
+              <i class="fas fa-circle list"></i>2016 - 2017<br />
+              Floirac (Bordeaux)
+            </div>
+            <div class="content">
+              <h3>Espace Couture</h3>
+              <h5>CAP Couture Flou</h5>
+              <p>
+                Apprentissage des bases de patronage du vêtement femme et de ses
+                transformations. Création de diverses pièces sur mesure tout au
+                long de l'année, du patronage au montage final.
               </p>
             </div>
           </div>
@@ -106,47 +122,35 @@
 
         <!-- Bloc EXPERIENCE PROFESSIONNELLE -->
         <section class="block">
-          <h2><i class="fas fa-briefcase icon"></i>Expérience professionnelle</h2>
+          <h2>
+            <i class="fas fa-briefcase icon"></i>Expérience professionnelle
+          </h2>
 
           <div class="line">
             <div class="date">
-              <p><i class="far fa-dot-circle list"> </i>Date et lieu</p>
+              <i class="far fa-dot-circle list"> </i>Juillet - Octobre 2019
+              <br />
+              Arès
             </div>
             <div class="content">
-              <h3>Intitulé du poste</h3>
-              <p>
-                Blablabla <br />
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
-                enim laborum, earum voluptate incidunt ab.
-              </p>
+              <h3>Cabanes & Compagnie</h3>
+              <h5>Vendeuse</h5>
+              <p>Vendeuse de prêt-à-porter et d'objets de décoration.</p>
             </div>
           </div>
 
           <div class="line">
             <div class="date">
-              <p><i class="fas fa-circle list"></i>Date et lieu</p>
+              <i class="fas fa-circle list"></i>Mai - Juin 2019 <br />
+              Eysines (Bordeaux)
             </div>
             <div class="content">
-              <h3>Intitulé du poste</h3>
+              <h3>Christmas & Cie</h3>
+              <h5>Intérim</h5>
               <p>
-                Blablabla <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-                adipisci neque numquam dolorum, similique fugiat, harum est
-                iusto incidunt corporis suscipit officia dolorem.
-              </p>
-            </div>
-          </div>
-
-          <div class="line">
-            <div class="date">
-              <p><i class="fas fa-circle list"></i>Date et lieu</p>
-            </div>
-            <div class="content">
-              <h3>Intitulé du poste</h3>
-              <p>
-                Blablabla <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                iusto odio recusandae architecto nostrum.
+                Réalisation d'éléments de décoration sur commande pour mettre en
+                place des vitrines de magasins (couture, mais aussi bricolage,
+                peinture, emballage)
               </p>
             </div>
           </div>
@@ -158,19 +162,21 @@
 
           <div class="recommend">
             <div class="contact">
-              <h4>Nom du contact</h4>
-              <p>Détails</p>
-              <p class="email">name@email.com</p>
+              <h4>OpenClassrooms</h4>
+              <p>Organisme de formation</p>
+              <p>Téléphone: +33 1 80 88 80 30</p>
+              <p>hello@openclassrooms.com</p>
             </div>
 
             <div class="contact">
-              <h4>Nom du contact</h4>
-              <p>Détails</p>
-              <p class="email">name@email.com</p>
+              <h4>OpenClassrooms</h4>
+              <p>Organisme de formation</p>
+              <p>Téléphone: +33 1 80 88 80 30</p>
+              <p>hello@openclassrooms.com</p>
             </div>
           </div>
         </section>
-      </div>
+      </main>
     </div>
   </body>
 </html>
