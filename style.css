@@ -28,7 +28,7 @@ h4 {
 }
 
 /* HEADER
-****************************************************************/
+*****************************************/
 
 header {
   margin-top: 70px;
@@ -58,7 +58,7 @@ header p {
 }
 
 /* SIDEBAR 
-****************************************************************/
+*****************************************/
 
 .sidebar {
   width: 400px;
@@ -75,6 +75,7 @@ header p {
   color: #fff;
   text-align: center;
   margin-top: 60px;
+  margin-bottom: 50px;
 }
 
 .sidebar p,
@@ -110,7 +111,7 @@ img {
 }
 
 .loisirs i {
-  font-size: 1.3em;
+  /* font-size: 1.3em; */
   margin: 12px;
   border-radius: 50%;
   border: 1px solid #fff;
@@ -118,7 +119,7 @@ img {
 }
 
 /* MAIN PAGE 
-****************************************************************/
+*****************************************/
 
 main {
   padding-left: 64px;
@@ -128,6 +129,10 @@ main {
   font-size: 1.7em;
   margin: 25px 30px 25px 0;
   border-bottom: 3px solid #00acc1;
+}
+
+.block h3 {
+  font-size: 1.4em;
 }
 
 .block h3,
@@ -197,3 +202,115 @@ main {
   align-content: center;
   line-height: 0.8em;
 }
+
+/************************************************************************************************
+*************************************************************************************************/
+
+@media screen and (max-width: 1390px) {
+  .container {
+    background-color: #fff;
+    width: 850px;
+    margin: 0;
+    display: flex;
+  }
+
+  p,
+  dl,
+  h5 {
+    font-size: 0.9em;
+  }
+
+  header {
+    margin: 55px 0 50px 0;
+  }
+
+  header p {
+    font-size: 1.5em;
+  }
+
+  /* SIDEBAR 
+**************************************/
+
+  .sidebar {
+    width: 300px;
+  }
+
+  img {
+    margin: 40px 50px 0 50px;
+    width: 180px;
+  }
+
+  .sidebar h2 {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+
+  .sidebar p,
+  .sidebar dt,
+  .sidebar dd {
+    margin: 0 20px 0 20px;
+  }
+
+  .sidebar dd {
+    margin-bottom: 20px;
+  }
+
+  .sidebar .loisirs {
+    height: 190px;
+  }
+
+  .sidebar .content {
+    font-size: 1.6em;
+  }
+
+  .loisirs i {
+    margin: 8px;
+    padding: 8px;
+  }
+
+  /* MAIN PAGE 
+***************************************/
+
+  main {
+    padding-left: 25px;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  .block h2 {
+    font-size: 1.3em;
+    margin: 15px 20px 5px 0;
+  }
+
+  .block h3 {
+    font-size: 1.1em;
+    margin-top: 5px;
+  }
+
+  /* icônes principales */
+  .icon {
+    margin-bottom: 10px;
+  }
+
+  .date {
+    width: 250px;
+    font-size: 0.8em;
+    padding: 8px 5px 0 20px;
+  }
+
+  .recommend {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .contact {
+    flex: 1;
+    align-content: center;
+    line-height: 0.8em;
+  }
+}
+
+/************************************************************************************************
+************************************************************************************************/
