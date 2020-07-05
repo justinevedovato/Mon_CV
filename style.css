@@ -60,13 +60,23 @@ header p {
 /* SIDEBAR 
 *****************************************/
 
+.sidebar header {
+  display: none;
+}
+
 .sidebar {
+  display: flex;
+  flex-direction: column;
   width: 400px;
   background-color: #00acc1;
   color: #fff;
   text-align: justify;
+}
+
+.sidebar .info-wrapper {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .sidebar h2 {
@@ -78,9 +88,9 @@ header p {
   margin-bottom: 50px;
 }
 
-.sidebar p,
-.sidebar dt,
-.sidebar dd {
+.info-wrapper p,
+.info-wrapper dt,
+.info-wrapper dd {
   margin: 0 35px 0 35px;
 }
 
@@ -103,15 +113,15 @@ img {
 .sidebar .loisirs {
   text-align: center;
   margin-top: auto;
-  height: 240px;
+  height: 250px;
 }
 
-.sidebar .content {
-  font-size: 2em;
+.sidebar .loisirs h2 {
+  margin-bottom: 25px;
 }
 
 .loisirs i {
-  /* font-size: 1.3em; */
+  font-size: 2.5em;
   margin: 12px;
   border-radius: 50%;
   border: 1px solid #fff;
@@ -214,8 +224,7 @@ main {
     display: flex;
   }
 
-  p,
-  dl,
+  .main p,
   h5 {
     font-size: 0.9em;
   }
@@ -245,9 +254,9 @@ main {
     margin-bottom: 30px;
   }
 
-  .sidebar p,
-  .sidebar dt,
-  .sidebar dd {
+  .info-wrapper p,
+  .info-wrapper dt,
+  .info-wrapper dd {
     margin: 0 20px 0 20px;
   }
 
@@ -256,14 +265,11 @@ main {
   }
 
   .sidebar .loisirs {
-    height: 190px;
-  }
-
-  .sidebar .content {
-    font-size: 1.6em;
+    height: 220px;
   }
 
   .loisirs i {
+    font-size: 1.9em;
     margin: 8px;
     padding: 8px;
   }
@@ -313,4 +319,136 @@ main {
 }
 
 /************************************************************************************************
+TABLETTE
 ************************************************************************************************/
+
+@media screen and (min-width: 660px) and (max-width: 980px) {
+  .container {
+    background-color: #fff;
+    width: 600px;
+    /* margin: 0; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* SIDEBAR 
+**************************************/
+
+  .sidebar header {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .sidebar .intro {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sidebar .info-wrapper {
+    flex-direction: row-reverse;
+  }
+
+  .sidebar .info-wrapper section {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    flex: 1;
+  }
+
+  .info-wrapper .about,
+  .info-wrapper .infos {
+    max-width: 250px;
+  }
+
+  .sidebar h2 {
+    font-size: 1em;
+    margin-top: 15px;
+  }
+
+  .info-wrapper p,
+  .info-wrapper dt,
+  .info-wrapper dd {
+    margin: 0 15px 0 15px;
+    font-size: 0.8em;
+  }
+
+  .sidebar dd {
+    margin-bottom: 20px;
+  }
+
+  img {
+    margin: 20px 30px 0 0;
+    width: 150px;
+  }
+
+  .sidebar .info-wrapper .loisirs {
+    flex: none;
+    width: 120px;
+    height: auto;
+  }
+
+  .sidebar .infos,
+  .sidebar .about {
+    text-align: initial;
+    margin: 0;
+  }
+
+  .loisirs i {
+    flex-direction: column;
+    font-size: 1.2em;
+    margin: 0 35px 15px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 10px;
+  }
+
+  /* HEADER
+  *****************************************/
+
+  main header {
+    display: none;
+  }
+
+  header {
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  header h1 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 0;
+  }
+
+  header h1 span {
+    color: #fff;
+  }
+
+  header p {
+    margin: 0;
+    font-size: 1.2em;
+    /* effet de soulignage partiel */
+    padding-bottom: 3px;
+    background: linear-gradient(to right, #fff, #fff) no-repeat;
+    background-size: 18% 2px;
+    background-position: left bottom;
+  }
+
+  /* MAIN PAGE 
+*****************************************/
+  main {
+    padding-left: 35px;
+  }
+}
+
+/************************************************************************************************
+************************************************************************************************/
+
+@media screen and (max-width: 660px) {
+  h2 {
+    color: blue;
+  }
+}
