@@ -1,0 +1,410 @@
+@media screen and (max-width: 1390px) {
+  .container {
+    background-color: #fff;
+    width: 850px;
+    margin: 0;
+    display: flex;
+  }
+
+  .main p,
+  h5 {
+    font-size: 0.9em;
+  }
+
+  header {
+    margin: 55px 0 50px 0;
+  }
+
+  header p {
+    font-size: 1.5em;
+  }
+
+  /* SIDEBAR 
+**************************************/
+
+  .sidebar {
+    width: 300px;
+  }
+
+  img {
+    margin: 40px 50px 0 50px;
+    width: 180px;
+  }
+
+  .sidebar h2 {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+
+  .info-wrapper p,
+  .info-wrapper dt,
+  .info-wrapper dd {
+    margin: 0 20px 0 20px;
+  }
+
+  .sidebar dd {
+    margin-bottom: 20px;
+  }
+
+  .sidebar .loisirs {
+    height: 220px;
+  }
+
+  .loisirs i {
+    font-size: 1.9em;
+    margin: 8px;
+    padding: 8px;
+  }
+
+  /* MAIN PAGE 
+***************************************/
+
+  main {
+    padding-left: 25px;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  .block h2 {
+    font-size: 1.3em;
+    margin: 15px 20px 5px 0;
+  }
+
+  .block h3 {
+    font-size: 1.1em;
+    margin-top: 5px;
+  }
+
+  .icon {
+    margin-bottom: 10px;
+  }
+
+  .date {
+    width: 250px;
+    font-size: 0.8em;
+    padding: 8px 5px 0 20px;
+  }
+
+  .recommend {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .contact {
+    flex: 1;
+    align-content: center;
+    line-height: 0.8em;
+  }
+}
+
+/************************************************************************************************
+TABLETTE
+************************************************************************************************/
+
+@media screen and (min-width: 660px) and (max-width: 980px) {
+  .container {
+    background-color: #fff;
+    width: 600px;
+    /* margin: 0; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* SIDEBAR 
+**************************************/
+
+  .sidebar header {
+    display: block;
+  }
+
+  .sidebar header h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .sidebar .intro {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sidebar .info-wrapper {
+    flex-direction: row-reverse;
+  }
+
+  .sidebar .info-wrapper section {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    flex: 1;
+  }
+
+  .sidebar .info-wrapper .about,
+  .sidebar .info-wrapper .infos {
+    max-width: 250px;
+  }
+
+  .sidebar .info-wrapper h2 {
+    font-size: 1em;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .info-wrapper p,
+  .info-wrapper dt,
+  .info-wrapper dd {
+    margin: 0 15px 0 15px;
+    font-size: 0.8em;
+  }
+
+  .sidebar dd {
+    margin-bottom: 20px;
+  }
+
+  img {
+    margin: 20px 30px 0 0;
+    width: 150px;
+  }
+
+  .sidebar .info-wrapper .loisirs {
+    flex: none;
+    width: 120px;
+    height: auto;
+  }
+
+  .sidebar .infos,
+  .sidebar .about {
+    text-align: initial;
+    margin: 0;
+  }
+
+  .sidebar .loisirs i {
+    flex-direction: column;
+    font-size: 1.2em;
+    margin: 0 35px 15px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 10px;
+  }
+
+  /* HEADER
+  *****************************************/
+
+  main header {
+    display: none;
+  }
+
+  header {
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  header h2 {
+    font-size: 1.7em;
+    color: black;
+    margin-bottom: 0;
+  }
+
+  header h2 span {
+    color: #fff;
+  }
+
+  header p {
+    margin: 0;
+    font-size: 1.2em;
+    /* effet de soulignage partiel */
+    padding-bottom: 3px;
+    background: linear-gradient(to right, #fff, #fff) no-repeat;
+    background-size: 18% 2px;
+    background-position: left bottom;
+  }
+
+  /* MAIN PAGE 
+*****************************************/
+  main {
+    padding-left: 35px;
+  }
+}
+
+/************************************************************************************************
+MOBILE
+************************************************************************************************/
+
+@media screen and (max-width: 660px) {
+  .container {
+    max-width: 300px;
+  }
+
+  /* SIDEBAR 
+**************************************/
+
+  .sidebar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 85vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .sidebar .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+  }
+
+  img {
+    margin: 20px 0 0;
+    width: 180px;
+  }
+
+  .info-wrapper .infos {
+    margin: 0;
+  }
+
+  .info-wrapper h2 {
+    margin-top: 40px;
+  }
+
+  .info-wrapper dd,
+  .info-wrapper dt,
+  .info-wrapper p {
+    font-size: 0.9em;
+  }
+
+  .sidebar .loisirs {
+    margin-top: 20px;
+  }
+
+  .sidebar .loisirs .content i {
+    margin-bottom: 15%;
+  }
+
+  #slide-sidebar-button {
+    display: block;
+  }
+
+  input:checked ~ .sidebar {
+    position: absolute;
+    left: -100vw;
+  }
+
+  /* Si le bouton est "checked", la barre latérale est cachée, et le bouton se trouve à gauche */
+  input:checked ~ label {
+    left: 5%;
+  }
+
+  /* Si le bouton est "unchecked", la barre est visible, et le bouton est à droite */
+  input:not(:checked) ~ label {
+    left: 80%;
+  }
+
+  /* bouton  */
+  label {
+    font-size: 1.3em;
+    position: fixed;
+    z-index: 2;
+    top: 15px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background-color: #0097a7;
+    color: #fff;
+    transition: left 0.7s ease, right 0.7s ease;
+    cursor: pointer;
+  }
+
+  /* MAIN PAGE 
+*****************************************/
+
+  .main {
+    width: 300px;
+    padding-left: 10px;
+  }
+
+  header {
+    margin: 50px 0 30px;
+  }
+
+  header h1 {
+    font-size: 1.4em;
+  }
+
+  header p {
+    font-size: 0.8em;
+    /* effet de soulignage partiel */
+    padding-bottom: 3px;
+    background: linear-gradient(to right, #00acc1, #00acc1) no-repeat;
+    background-size: 15% 2px;
+    background-position: left bottom;
+  }
+
+  .block h5,
+  .block p {
+    font-size: 0.8em;
+  }
+
+  .block h2 {
+    font-size: 1.1em;
+    margin: 15px 0 10px 0;
+    width: 250px;
+    border-bottom: 2px solid #00acc1;
+  }
+
+  .block h3,
+  .block h4 {
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+
+  .block h4 {
+    margin: 20px 0 20px;
+  }
+
+  /* icônes principales */
+  .icon {
+    font-size: 1em;
+    margin: 0 10px 3px 0;
+  }
+
+  .block .line {
+    flex-direction: column;
+    margin: 20px 0 0;
+  }
+
+  .block .date {
+    color: #546e7a;
+    width: 250px;
+    font-size: 0.7em;
+    padding: 8px 5px 15px 20px;
+  }
+
+  .line .content,
+  .block .contact {
+    width: auto;
+    margin-right: 25px;
+    padding-bottom: 25px;
+    background: linear-gradient(to right, #00acc1, #00acc1) no-repeat;
+    background-size: 30% 1px;
+    background-position: center bottom;
+  }
+
+  .recommend {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .contact {
+    flex: 1;
+    align-content: center;
+    line-height: 0.6em;
+  }
+}
